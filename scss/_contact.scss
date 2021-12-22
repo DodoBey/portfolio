@@ -25,6 +25,7 @@
                 border: 2px $secondaryColor solid;
                 border-radius: 4px;
                 resize: none;
+                background-color: $primaryColor;
             }
         }
         .contactButton {
@@ -39,6 +40,17 @@
                     color: $primaryColor;
                     border: 2px $alternateColor solid;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #contactSection {
+        height: 45vh;
+        #contactForm {
+            h1 {
+                font-size: 4vw;
             }
         }
     }
