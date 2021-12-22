@@ -138,37 +138,44 @@ nav div ul li a {
   font-family: "Share Tech Mono", monospace;
   font-weight: bold;
   font-size: 2rem;
-  color: #484349 !important;
+  color: #132c33 !important;
 }
 nav div ul li a:hover {
-  color: #58a4b0 !important;
+  color: #126e82 !important;
 }
 
-#banner .bannerContents {
+#banner {
   height: 50vh;
-  background-color: #58a4b0;
+  background-image: url("../img/bg.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+#banner .bannerContents {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Share Tech Mono", monospace;
+  width: 100%;
+  background-color: rgba(18, 110, 130, 0.5);
+  color: #d8e3e7;
+  text-shadow: 0px 0px 5px #132c33;
 }
 #banner .bannerContents h1 {
-  font-family: "Share Tech Mono", monospace;
-  color: #484349;
   font-size: 3rem;
   text-align: center;
 }
 #banner .bannerContents h3 {
-  font-family: "Share Tech Mono", monospace;
-  color: #484349;
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
 }
 
 #aboutSection {
-  background-color: #f7f0f0;
+  background-color: #d8e3e7;
   font-family: "Share Tech Mono", monospace;
-  color: #484349;
+  color: #132c33;
 }
 #aboutSection .aboutArea {
   display: flex;
@@ -201,7 +208,7 @@ nav div ul li a:hover {
 
 #portfolioSection {
   font-family: "Share Tech Mono", monospace;
-  color: #484349 !important;
+  color: #132c33 !important;
 }
 #portfolioSection .portfolioContents {
   height: 90vh;
@@ -209,7 +216,7 @@ nav div ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #58a4b0;
+  background-color: #126e82;
 }
 #portfolioSection .portfolioContents h1 {
   font-size: 3rem;
@@ -251,26 +258,26 @@ nav div ul li a:hover {
   display: inline-block;
   margin: 10px auto;
   text-decoration: none;
-  color: #484349;
-  border: 2px #484349 solid;
+  color: #132c33;
+  border: 2px #132c33 solid;
   border-radius: 4px;
   padding: 5px;
 }
 #portfolioSection .portfolioContents .worksArea .worksObject a:hover {
   transform: scale(1.1);
-  background-color: #f7f0f0;
-  color: #58a4b0;
-  border: 2px #58a4b0 solid;
+  background-color: #d8e3e7;
+  color: #126e82;
+  border: 2px #126e82 solid;
 }
 #portfolioSection .portfolioContents a {
-  color: #484349;
+  color: #132c33;
   text-decoration: none;
 }
 #portfolioSection .portfolioContents a p {
   font-size: 1.5rem;
 }
 #portfolioSection .portfolioContents a p:hover {
-  color: #f7f0f0;
+  color: #d8e3e7;
 }
 
 /*# sourceMappingURL=style.css.map */
