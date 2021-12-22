@@ -134,6 +134,12 @@ table {
   border-spacing: 0;
 }
 
+nav {
+  background-color: #d8e3e7;
+}
+nav div .mainLogo {
+  width: 20%;
+}
 nav div ul li a {
   font-family: "Share Tech Mono", monospace;
   font-weight: bold;
@@ -144,6 +150,35 @@ nav div ul li a:hover {
   color: #126e82 !important;
 }
 
+.scrolled {
+  background-color: rgba(216, 227, 231, 0.7);
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(19, 44, 51, 0.5);
+  box-shadow: 0px 10px 15px 0px rgba(19, 44, 51, 0.5);
+}
+
+.navbarButton {
+  color: #132c33;
+}
+.navbarButton .navbarIcon {
+  color: #132c33;
+}
+
+@media screen and (max-width: 576px) {
+  nav div {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0 !important;
+    vertical-align: middle;
+    align-items: center;
+  }
+  nav div .navbarButton span {
+    display: inline-block !important;
+    text-align: right !important;
+  }
+  nav div div ul li a {
+    text-align: right;
+  }
+}
 #banner {
   height: 50vh;
   background-image: url("../img/bg.png");
@@ -172,6 +207,17 @@ nav div ul li a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 576px) {
+  #banner {
+    height: 25vh;
+  }
+  #banner .bannerContents h1 {
+    font-size: 5vw;
+  }
+  #banner .bannerContents h3 {
+    font-size: 3.2vw;
+  }
+}
 #aboutSection {
   background-color: #d8e3e7;
   font-family: "Share Tech Mono", monospace;
@@ -200,12 +246,32 @@ nav div ul li a:hover {
   margin: 0 20px;
 }
 #aboutSection .aboutArea .aboutContents p {
-  font-size: 2vw;
-  text-align: center;
+  font-size: 1.8vw;
+  text-align: left;
   margin: 0 20px;
   width: 50%;
 }
 
+@media screen and (max-width: 576px) {
+  #aboutSection {
+    height: 38vh;
+  }
+  #aboutSection .aboutArea h1 {
+    font-size: 4vw;
+  }
+  #aboutSection .aboutArea .aboutContents {
+    display: flex;
+    flex-direction: column;
+  }
+  #aboutSection .aboutArea .aboutContents img {
+    width: 20%;
+    margin: 10px 0;
+  }
+  #aboutSection .aboutArea .aboutContents p {
+    font-size: 3vw;
+    width: 70%;
+  }
+}
 #portfolioSection {
   font-family: "Share Tech Mono", monospace;
   color: #132c33 !important;
@@ -226,12 +292,12 @@ nav div ul li a:hover {
 #portfolioSection .portfolioContents .worksArea {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 150vh;
   margin: 10px auto;
 }
 #portfolioSection .portfolioContents .worksArea .worksObject {
-  width: 33%;
-  margin: 0 auto;
+  margin: 0 0;
   text-align: center;
 }
 #portfolioSection .portfolioContents .worksArea .worksObject img {
@@ -279,6 +345,41 @@ nav div ul li a:hover {
   color: #d8e3e7;
 }
 
+@media screen and (max-width: 576px) {
+  #portfolioSection {
+    height: 180vh;
+  }
+  #portfolioSection .portfolioContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #portfolioSection .portfolioContents h1 {
+    font-size: 4vw;
+  }
+  #portfolioSection .portfolioContents .worksArea {
+    flex-direction: column;
+    margin: 10px auto;
+    width: 100%;
+  }
+  #portfolioSection .portfolioContents .worksArea .worksObject {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  #portfolioSection .portfolioContents .worksArea .worksObject h3 {
+    font-size: 3.5vw;
+  }
+  #portfolioSection .portfolioContents .worksArea .worksObject span {
+    font-size: 3vw;
+  }
+  #portfolioSection .portfolioContents .worksArea .worksObject p {
+    font-size: 3vw;
+  }
+  #portfolioSection .portfolioContents a p {
+    font-size: 4vw;
+  }
+}
 #contactSection {
   height: 55vh;
   background: #d8e3e7;
@@ -309,6 +410,7 @@ nav div ul li a:hover {
   border: 2px #132c33 solid;
   border-radius: 4px;
   resize: none;
+  background-color: #d8e3e7;
 }
 #contactSection #contactForm .contactButton button {
   font-size: 20px;
@@ -321,6 +423,66 @@ nav div ul li a:hover {
   background-color: #126e82;
   color: #d8e3e7;
   border: 2px #126e82 solid;
+}
+
+@media screen and (max-width: 576px) {
+  #contactSection {
+    height: 45vh;
+  }
+  #contactSection #contactForm h1 {
+    font-size: 4vw;
+  }
+}
+#footerSection {
+  height: 8vh;
+  background: #126e82;
+  font-family: "Share Tech Mono", monospace;
+  color: #132c33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footerSection .footerArea {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#footerSection .footerArea p {
+  margin: auto 0;
+}
+#footerSection .footerArea a {
+  display: inline-block;
+  color: #132c33;
+  font-size: 2vw;
+}
+#footerSection .footerArea a:hover {
+  color: #d8e3e7;
+}
+
+@media screen and (max-width: 576px) {
+  #footerSection {
+    height: 10vh;
+  }
+  #footerSection .footerArea {
+    width: 90%;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  #footerSection .footerArea p {
+    font-weight: 600;
+    font-size: 3.5vw;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #footerSection .footerArea .socialLinks {
+    text-align: center;
+  }
+  #footerSection .footerArea .socialLinks a {
+    display: inline-block;
+    font-size: 6vw;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

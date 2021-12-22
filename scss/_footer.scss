@@ -1,0 +1,51 @@
+#footerSection {
+    height: 8vh;
+    background: $alternateColor;
+    font-family: "Share Tech Mono", monospace;
+    color: $secondaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footerArea {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+            margin: auto 0;
+        }
+        a {
+            display: inline-block;
+            color: $secondaryColor;
+            font-size: 2vw;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #footerSection {
+        height: 10vh;
+        .footerArea {
+            width: 90%;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            p {
+                font-weight: 600;
+                font-size: 3.5vw;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .socialLinks {
+                text-align: center;
+                a {
+                    display: inline-block;
+                    font-size: 6vw;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

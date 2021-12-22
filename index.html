@@ -20,25 +20,32 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar sticky-top navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-right">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutSection">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolioSection">Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contactSection">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+
+    <nav id="navbar" class="navbar sticky-top navbar-expand-sm">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="#"><img class="mainLogo" src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler navbarButton sticky-top ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbarIcon"><i class="fas fa-hamburger"></i></span>
+                </button>
             </div>
-        </nav>
-    </header>
+            <div class="collapse navbar-collapse navbarItems" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutSection">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolioSection">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactSection">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section id="banner">
         <div class="bannerContents">
@@ -122,7 +129,20 @@
             </div>
         </form>
     </section>
-    <footer></footer>
+    <footer id="footerSection">
+        <div class="footerArea">
+            <p class="copyright">&copy DodoBey Project | Designed By DodoBey | 2021</p>
+            <div class="socialLinks">
+                <a href="https://www.linkedin.com/in/dogukanyigiter/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/DodoBey" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/dgknygtr/" target="_blank"><i
+                        class="fab fa-instagram-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCDkEB0qVYDEn7mcwBkJOsfA" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
 
 
 
