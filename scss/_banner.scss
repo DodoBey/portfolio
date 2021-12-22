@@ -1,19 +1,24 @@
 #banner {
+    height: 50vh;
+    background-image: url("../img/bg.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
     .bannerContents {
-        height: 50vh;
-        background-color: $alternateColor;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        font-family: "Share Tech Mono", monospace;
+        width: 100%;
+        background-color: rgb(18, 110, 130, 0.5);
+        color: $primaryColor;
+        text-shadow: 0px 0px 5px $secondaryColor;
         h1 {
-            font-family: "Share Tech Mono", monospace;
-            color: $secondaryColor;
             font-size: 3rem;
             text-align: center;
         }
         h3 {
-            font-family: "Share Tech Mono", monospace;
-            color: $secondaryColor;
             font-weight: 600;
             font-size: 2rem;
             text-align: center;
