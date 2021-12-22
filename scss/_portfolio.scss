@@ -1,24 +1,72 @@
 #portfolioSection {
+    font-family: "Share Tech Mono", monospace;
+    color: $secondaryColor !important;
     .portfolioContents {
-        height: 75vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: $alternateColor;
         h1 {
-            font-family: "Share Tech Mono", monospace;
             font-size: 3rem;
             font-weight: 600;
             text-align: center;
-            color: $secondaryColor;
+            margin: 10px auto;
         }
         .worksArea {
             display: flex;
             flex-direction: row;
-            width: 75%;
-            img {
-                width: 100%;
+            width: 150vh;
+            margin: 10px auto;
+            .worksObject {
+                width: 33%;
+                margin: 0 auto;
+                text-align: center;
+                img {
+                    width: 75%;
+                    border-radius: 5px;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+                span {
+                    display: block;
+                    font-size: 1rem;
+                    margin: 10px 0;
+                }
+                p {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    margin: 10px;
+                }
+                a {
+                    display: inline-block;
+                    margin: 10px auto;
+                    text-decoration: none;
+                    color: $secondaryColor;
+                    border: 2px $secondaryColor solid;
+                    border-radius: 4px;
+                    padding: 5px;
+                    &:hover {
+                        transform: scale(1.1);
+                        background-color: $primaryColor;
+                        color: $alternateColor;
+                        border: 2px $alternateColor solid;
+                    }
+                }
+            }
+        }
+        a {
+            color: $secondaryColor;
+            text-decoration: none;
+            p {
+                font-size: 1.5rem;
+                &:hover {
+                    color: $primaryColor;
+                }
             }
         }
     }

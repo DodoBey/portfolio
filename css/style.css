@@ -165,30 +165,46 @@ nav div ul li a:hover {
   text-align: center;
 }
 
-#aboutSection .aboutContents {
-  height: 75vh;
+#aboutSection {
+  background-color: #f7f0f0;
+  font-family: "Share Tech Mono", monospace;
+  color: #484349;
+}
+#aboutSection .aboutArea {
+  display: flex;
+  flex-direction: column;
+}
+#aboutSection .aboutArea h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 10px auto;
+}
+#aboutSection .aboutArea .aboutContents {
+  height: 55vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #f7f0f0;
 }
-#aboutSection .aboutContents img {
+#aboutSection .aboutArea .aboutContents img {
   width: 15%;
   border-radius: 10%;
-  margin: auto 20px;
+  margin: 0 20px;
 }
-#aboutSection .aboutContents p {
-  font-family: "Share Tech Mono", monospace;
+#aboutSection .aboutArea .aboutContents p {
   font-size: 2rem;
   text-align: center;
-  color: #484349;
-  margin: auto 20px;
+  margin: 0 20px;
   width: 50%;
 }
 
+#portfolioSection {
+  font-family: "Share Tech Mono", monospace;
+  color: #484349 !important;
+}
 #portfolioSection .portfolioContents {
-  height: 75vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,19 +212,65 @@ nav div ul li a:hover {
   background-color: #58a4b0;
 }
 #portfolioSection .portfolioContents h1 {
-  font-family: "Share Tech Mono", monospace;
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
-  color: #484349;
+  margin: 10px auto;
 }
 #portfolioSection .portfolioContents .worksArea {
   display: flex;
   flex-direction: row;
-  width: 75%;
+  width: 150vh;
+  margin: 10px auto;
 }
-#portfolioSection .portfolioContents .worksArea img {
-  width: 100%;
+#portfolioSection .portfolioContents .worksArea .worksObject {
+  width: 33%;
+  margin: 0 auto;
+  text-align: center;
+}
+#portfolioSection .portfolioContents .worksArea .worksObject img {
+  width: 75%;
+  border-radius: 5px;
+}
+#portfolioSection .portfolioContents .worksArea .worksObject h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+#portfolioSection .portfolioContents .worksArea .worksObject span {
+  display: block;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+#portfolioSection .portfolioContents .worksArea .worksObject p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 10px;
+}
+#portfolioSection .portfolioContents .worksArea .worksObject a {
+  display: inline-block;
+  margin: 10px auto;
+  text-decoration: none;
+  color: #484349;
+  border: 2px #484349 solid;
+  border-radius: 4px;
+  padding: 5px;
+}
+#portfolioSection .portfolioContents .worksArea .worksObject a:hover {
+  transform: scale(1.1);
+  background-color: #f7f0f0;
+  color: #58a4b0;
+  border: 2px #58a4b0 solid;
+}
+#portfolioSection .portfolioContents a {
+  color: #484349;
+  text-decoration: none;
+}
+#portfolioSection .portfolioContents a p {
+  font-size: 1.5rem;
+}
+#portfolioSection .portfolioContents a p:hover {
+  color: #f7f0f0;
 }
 
 /*# sourceMappingURL=style.css.map */
