@@ -100,6 +100,27 @@
         </div>
     </section>
     <section id="contactSection">
+        <form id="contactForm" method="post" action="contact-form-process.php">
+            <h1>Contact Me</h1>
+            <div class="contactInputs">
+                <lable for="Name">Name</lable>
+                <input type="text" id="Name" name="Name" placeholder="Please Type Your Name" required>
+            </div>
+            <div class="contactInputs">
+                <lable for="Email">Email</lable>
+                <input type="email" id="Email" name="Email" placeholder="Please Type Your Email Adress" required>
+            </div>
+            <div class="contactInputs">
+                <lable for="Message">Message</lable>
+                <textarea type="text" id="Message" name="Message" placeholder="Please Type Your Message" rows="6"
+                    maxlength="3000" required></textarea>
+            </div>
+            <div class="contactButton">
+                <button type="submit">
+                    Send Message
+                </button>
+            </div>
+        </form>
     </section>
     <footer></footer>
 
