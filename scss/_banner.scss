@@ -1,0 +1,22 @@
+#banner {
+    .bannerContents {
+        height: 50vh;
+        background-color: $alternateColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            font-family: "Share Tech Mono", monospace;
+            color: $secondaryColor;
+            font-size: 3rem;
+            text-align: center;
+        }
+        h3 {
+            font-family: "Share Tech Mono", monospace;
+            color: $secondaryColor;
+            font-weight: 600;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}

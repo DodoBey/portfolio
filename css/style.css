@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+nav div ul li a {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #484349 !important;
+}
+nav div ul li a:hover {
+  color: #58a4b0 !important;
+}
+
+#banner .bannerContents {
+  height: 50vh;
+  background-color: #58a4b0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#banner .bannerContents h1 {
+  font-family: "Share Tech Mono", monospace;
+  color: #484349;
+  font-size: 3rem;
+  text-align: center;
+}
+#banner .bannerContents h3 {
+  font-family: "Share Tech Mono", monospace;
+  color: #484349;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#aboutSection .aboutContents {
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f0f0;
+}
+#aboutSection .aboutContents img {
+  width: 15%;
+  border-radius: 10%;
+  margin: auto 20px;
+}
+#aboutSection .aboutContents p {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2rem;
+  text-align: center;
+  color: #484349;
+  margin: auto 20px;
+  width: 50%;
+}
+
+#portfolioSection .portfolioContents {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #58a4b0;
+}
+#portfolioSection .portfolioContents h1 {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #484349;
+}
+#portfolioSection .portfolioContents .worksArea {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+}
+#portfolioSection .portfolioContents .worksArea img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

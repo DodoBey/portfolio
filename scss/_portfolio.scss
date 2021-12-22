@@ -1,0 +1,25 @@
+#portfolioSection {
+    .portfolioContents {
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $alternateColor;
+        h1 {
+            font-family: "Share Tech Mono", monospace;
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+            color: $secondaryColor;
+        }
+        .worksArea {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
