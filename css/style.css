@@ -163,12 +163,12 @@ nav div ul li a:hover {
   text-shadow: 0px 0px 5px #132c33;
 }
 #banner .bannerContents h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   text-align: center;
 }
 #banner .bannerContents h3 {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2vw;
   text-align: center;
 }
 
@@ -176,6 +176,7 @@ nav div ul li a:hover {
   background-color: #d8e3e7;
   font-family: "Share Tech Mono", monospace;
   color: #132c33;
+  height: 60vh;
 }
 #aboutSection .aboutArea {
   display: flex;
@@ -184,11 +185,10 @@ nav div ul li a:hover {
 #aboutSection .aboutArea h1 {
   text-align: center;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.5vw;
   margin: 10px auto;
 }
 #aboutSection .aboutArea .aboutContents {
-  height: 55vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -200,7 +200,7 @@ nav div ul li a:hover {
   margin: 0 20px;
 }
 #aboutSection .aboutArea .aboutContents p {
-  font-size: 2rem;
+  font-size: 2vw;
   text-align: center;
   margin: 0 20px;
   width: 50%;
@@ -209,17 +209,16 @@ nav div ul li a:hover {
 #portfolioSection {
   font-family: "Share Tech Mono", monospace;
   color: #132c33 !important;
+  background-color: #126e82;
+  height: 85vh;
 }
 #portfolioSection .portfolioContents {
-  height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: #126e82;
 }
 #portfolioSection .portfolioContents h1 {
-  font-size: 3rem;
+  font-size: 2.5vw;
   font-weight: 600;
   text-align: center;
   margin: 10px auto;
@@ -240,17 +239,17 @@ nav div ul li a:hover {
   border-radius: 5px;
 }
 #portfolioSection .portfolioContents .worksArea .worksObject h3 {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 600;
   margin: 10px 0;
 }
 #portfolioSection .portfolioContents .worksArea .worksObject span {
   display: block;
-  font-size: 1rem;
+  font-size: 1vw;
   margin: 10px 0;
 }
 #portfolioSection .portfolioContents .worksArea .worksObject p {
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: 600;
   margin: 10px;
 }
@@ -274,10 +273,54 @@ nav div ul li a:hover {
   text-decoration: none;
 }
 #portfolioSection .portfolioContents a p {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 #portfolioSection .portfolioContents a p:hover {
   color: #d8e3e7;
+}
+
+#contactSection {
+  height: 55vh;
+  background: #d8e3e7;
+  font-family: "Share Tech Mono", monospace;
+  color: #132c33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contactSection #contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+#contactSection #contactForm h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5vw;
+}
+#contactSection #contactForm .contactInputs {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+#contactSection #contactForm .contactInputs input,
+#contactSection #contactForm .contactInputs textarea {
+  width: 300px;
+  border: 2px #132c33 solid;
+  border-radius: 4px;
+  resize: none;
+}
+#contactSection #contactForm .contactButton button {
+  font-size: 20px;
+  border: 2px #132c33 solid;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: transparent;
+}
+#contactSection #contactForm .contactButton button:hover {
+  background-color: #126e82;
+  color: #d8e3e7;
+  border: 2px #126e82 solid;
 }
 
 /*# sourceMappingURL=style.css.map */

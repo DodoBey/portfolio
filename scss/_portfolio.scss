@@ -1,15 +1,14 @@
 #portfolioSection {
     font-family: "Share Tech Mono", monospace;
     color: $secondaryColor !important;
+    background-color: $alternateColor;
+    height: 85vh;
     .portfolioContents {
-        height: 90vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        background-color: $alternateColor;
         h1 {
-            font-size: 3rem;
+            font-size: 2.5vw;
             font-weight: 600;
             text-align: center;
             margin: 10px auto;
@@ -28,17 +27,17 @@
                     border-radius: 5px;
                 }
                 h3 {
-                    font-size: 1.5rem;
+                    font-size: 1.5vw;
                     font-weight: 600;
                     margin: 10px 0;
                 }
                 span {
                     display: block;
-                    font-size: 1rem;
+                    font-size: 1vw;
                     margin: 10px 0;
                 }
                 p {
-                    font-size: 1rem;
+                    font-size: 1vw;
                     font-weight: 600;
                     margin: 10px;
                 }
@@ -63,7 +62,7 @@
             color: $secondaryColor;
             text-decoration: none;
             p {
-                font-size: 1.5rem;
+                font-size: 1.5vw;
                 &:hover {
                     color: $primaryColor;
                 }
