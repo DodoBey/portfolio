@@ -325,11 +325,11 @@ nav div ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 2vw;
 }
 #skillsSection .skillsArea .skilssIcon .skillsCategories a div :last-child {
-  margin-top: 5px;
+  margin: 5px 5px 0 5px;
   font-weight: bold;
-  font-size: 1.5vw;
 }
 
 @media screen and (max-width: 576px) {
@@ -339,8 +339,11 @@ nav div ul li a:hover {
   #skillsSection .skillsArea .skilssIcon .skillsCategories h3 {
     font-size: 3.5vw;
   }
-  #skillsSection .skillsArea .skilssIcon .skillsCategories a {
-    font-size: 4.5vw;
+  #skillsSection .skillsArea .skilssIcon .skillsCategories a div {
+    font-size: 2.2vw;
+  }
+  #skillsSection .skillsArea .skilssIcon .skillsCategories a div :last-child {
+    margin: 5px 3px 0 3px;
   }
 }
 #portfolioSection {
@@ -365,7 +368,7 @@ nav div ul li a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10px auto;
+  margin: 10px 20px;
 }
 #portfolioSection .portfolioContents .worksArea .worksObject {
   text-align: center;
@@ -430,7 +433,6 @@ nav div ul li a:hover {
   }
   #portfolioSection .portfolioContents .worksArea {
     flex-direction: column;
-    margin: 10px auto;
     width: 100%;
   }
   #portfolioSection .portfolioContents .worksArea .worksObject {
@@ -504,6 +506,9 @@ nav div ul li a:hover {
 }
 
 @media screen and (max-width: 576px) {
+  #contactSection {
+    color: #132c33;
+  }
   #contactSection #contactForm h1 {
     font-size: 4vw;
   }
@@ -548,7 +553,7 @@ nav div ul li a:hover {
   }
   #footerSection .footerArea p {
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 2.5vw;
     text-align: center;
     margin-top: 10px;
   }
