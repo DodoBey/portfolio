@@ -2,15 +2,12 @@
 if (isset($_POST['Email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "dogukanyigiter@gmail.com";
+    $email_to = "dogukanyigiter@dogukanyigiter.com";
     $email_subject = "New Form Message";
 
     function problem($error)
     {
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br><br>";
-        echo $error . "<br><br>";
-        echo "Please go back and fix these errors.<br><br>";
+        echo $error;
         die();
     }
 
@@ -31,17 +28,17 @@ if (isset($_POST['Email'])) {
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
     if (!preg_match($email_exp, $email)) {
-        $error_message .= 'The Email address you entered does not appear to be valid.<br>';
+        $error_message .= 'The Email address you entered does not appear to be valid.';
     }
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
     if (!preg_match($string_exp, $name)) {
-        $error_message .= 'The Name you entered does not appear to be valid.<br>';
+        $error_message .= 'The Name you entered does not appear to be valid.';
     }
 
     if (strlen($message) < 2) {
-        $error_message .= 'The Message you entered do not appear to be valid.<br>';
+        $error_message .= 'The Message you entered do not appear to be valid.';
     }
 
     if (strlen($error_message) > 0) {
@@ -66,11 +63,7 @@ if (isset($_POST['Email'])) {
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
-
-    <!-- include your success message below -->
-
-    Thank you for contacting us. We will be in touch with you very soon.
-
+    Thank you for contacting me! I will be in touch with you very soon!
 <?php
 }
 ?>
