@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+
 </head>
 
 <body>
@@ -53,7 +57,9 @@
     </section>
     <section id="aboutSection">
         <div class="aboutArea">
-            <h1>About</h1>
+            <div class="aboutTitle">
+                <h1>About</h1>
+            </div>
             <div class="aboutContents">
                 <img src="img/profile.jpg" alt="">
                 <p>Frontend web developer with a background in IT service administration for the sports industry. My
@@ -66,32 +72,120 @@
                     frontend developer in a team where I can learn new technologies and improve on my existing skills
                 </p>
             </div>
+            <div class="aboutLinks">
+                <a href="https://www.linkedin.com/in/dogukanyigiter/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/DodoBey" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/dgknygtr/" target="_blank"><i
+                        class="fab fa-instagram-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCDkEB0qVYDEn7mcwBkJOsfA" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </section>
     <section id="skillsSection">
         <div class="skillsArea">
             <h1>Skills</h1>
             <div class="skilssIcon">
-                <a href="https://www.w3.org/html/" target="_blank"><i class="fab fa-html5"></i></a>
-                <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank"><i
-                        class="fab fa-css3-alt"></i></a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript?" target="_blank"><i
-                        class="fab fa-js"></i></a>
-                <a href="https://jquery.com/" target="_blank"><span class="iconify"
-                        data-icon="akar-icons:jquery-fill"></span></a>
-                <a href="https://reactjs.org/" target="_blank"><i class="fab fa-react"></i></a>
-                <a href="https://react-redux.js.org/" target="_blank"><span class="iconify"
-                        data-icon="simple-icons:redux"></span></a>
-                <a href="https://mui.com/" target="_blank"><span class="iconify" data-icon="mdi:material-ui"></span></a>
-                <a href="https://sass-lang.com/" target="_blank"><i class="fab fa-sass"></i></a>
-                <a href="https://wordpress.org/" target="_blank"><i class="fab fa-wordpress"></i></a>
-                <a href="https://getbootstrap.com/" target="_blank"><i class="fab fa-bootstrap"></i></a>
-                <a href="https://nodejs.org/en/" target="_blank"><i class="fab fa-node"></i></a>
-                <a href="https://www.mongodb.com/" target="_blank"><span class="iconify"
-                        data-icon="simple-icons:mongodb"></span></a>
-                <a href="https://git-scm.com/" target="_blank"><i class="fab fa-git-alt"></i></a>
-                <a href="https://code.visualstudio.com/" target="_blank"><span class="iconify"
-                        data-icon="bx:bxl-visual-studio"></span></a>
+                <div class="skillsCategories">
+                    <h3>Languages</h3>
+                    <a href="https://www.w3.org/html/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="fa-brands:html5"></span>
+                            <span>HTML</span>
+                        </div>
+                    </a>
+                    <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="fa-brands:css3-alt"></span>
+                            <span>CSS</span>
+                        </div>
+                    </a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript?" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="akar-icons:javascript-fill"></span>
+                            <span>JavaScript</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="skillsCategories">
+                    <h3>Libraries and Frameworks</h3>
+                    <a href="https://jquery.com/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="akar-icons:jquery-fill"></span>
+                            <span>jQuery</span>
+                        </div>
+                    </a>
+                    <a href="https://reactjs.org/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="akar-icons:react-fill"></span>
+                            <span>React</span>
+                        </div>
+                    </a>
+                    <a href="https://react-redux.js.org/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="simple-icons:redux"></span>
+                            <span>React-Redux</span>
+                        </div>
+                    </a>
+                    <a href="https://react-redux.js.org/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="simple-icons:reactrouter"></span>
+                            <span>React Router</span>
+                        </div>
+                    </a>
+                    <a href="https://mui.com/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="mdi:material-ui"></span>
+                            <span>MaterialUI</span>
+                        </div>
+                    </a>
+                    <a href="https://sass-lang.com/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="fa-brands:sass"></span>
+                            <span>SASS</span>
+                        </div>
+                    </a>
+                    <a href="https://getbootstrap.com/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="fa-brands:bootstrap"></span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="skillsCategories">
+                    <h3>Tools and Databases</h3>
+                    <a href="https://wordpress.org/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="fa-brands:wordpress"></span>
+                            <span>WordPress</span>
+                        </div>
+                    </a>
+                    <a href="https://nodejs.org/en/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="fa-brands:node"></span>
+                            <span>Node.js</span>
+                        </div>
+                    </a>
+                    <a href="https://www.mongodb.com/" target="_blank">
+                        <div>
+                            <i class="iconify" data-icon="simple-icons:mongodb"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </a>
+                    <a href="https://git-scm.com/" target="_blank">
+                        <div>
+                            <span class="iconify" data-icon="fa-brands:git-alt"></span>
+                            <span>Git</span>
+                        </div>
+                    </a>
+                    <a href="https://code.visualstudio.com/" target="_blank">
+                        <div>
+                            <i class="iconify" data-icon="bx:bxl-visual-studio"></i>
+                            <span>Visual Studio</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -138,16 +232,15 @@
             <h1>Contact Me</h1>
             <div class="contactInputs">
                 <lable for="Name">Name</lable>
-                <input type="text" id="Name" name="Name" placeholder="Please Type Your Name" required>
+                <input type="text" id="Name" name="Name" required>
             </div>
             <div class="contactInputs">
                 <lable for="Email">Email</lable>
-                <input type="email" id="Email" name="Email" placeholder="Please Type Your Email Adress" required>
+                <input type="email" id="Email" name="Email" required>
             </div>
             <div class="contactInputs">
                 <lable for="Message">Message</lable>
-                <textarea type="text" id="Message" name="Message" placeholder="Please Type Your Message" rows="6"
-                    maxlength="3000" required></textarea>
+                <textarea type="text" id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
             </div>
             <div class="contactButton">
                 <button type="submit">
@@ -158,7 +251,7 @@
     </section>
     <footer id="footerSection">
         <div class="footerArea">
-            <p class="copyright">&copy DodoBey Project | Designed By DodoBey | 2021</p>
+            <p class="copyright">&copy DodoBey Project | Created By Dogukan Yigiter | 2021</p>
             <div class="socialLinks">
                 <a href="https://www.linkedin.com/in/dogukanyigiter/" target="_blank"><i
                         class="fab fa-linkedin"></i></a>
