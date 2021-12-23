@@ -1,11 +1,11 @@
 #contactSection {
-    height: 55vh;
-    background: $primaryColor;
+    background: $alternateColor;
     font-family: "Share Tech Mono", monospace;
     color: $secondaryColor;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
     #contactForm {
         display: flex;
         flex-direction: column;
@@ -25,7 +25,10 @@
                 border: 2px $secondaryColor solid;
                 border-radius: 4px;
                 resize: none;
-                background-color: $primaryColor;
+                background-color: $alternateColor;
+                &::placeholder {
+                    color: $secondaryColor;
+                }
             }
         }
         .contactButton {
@@ -36,9 +39,9 @@
                 padding: 5px;
                 background-color: transparent;
                 &:hover {
-                    background-color: $alternateColor;
-                    color: $primaryColor;
-                    border: 2px $alternateColor solid;
+                    background-color: $primaryColor;
+                    color: $alternateColor;
+                    border: 2px $primaryColor solid;
                 }
             }
         }
@@ -47,7 +50,6 @@
 
 @media screen and (max-width: 576px) {
     #contactSection {
-        height: 45vh;
         #contactForm {
             h1 {
                 font-size: 4vw;

@@ -2,7 +2,7 @@
     background-color: $primaryColor;
     font-family: "Share Tech Mono", monospace;
     color: $secondaryColor;
-    height: 60vh;
+    padding: 20px 0;
     .aboutArea {
         display: flex;
         flex-direction: column;
@@ -34,7 +34,6 @@
 
 @media screen and (max-width: 576px) {
     #aboutSection {
-        height: 38vh;
         .aboutArea {
             h1 {
                 font-size: 4vw;
