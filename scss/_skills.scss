@@ -1,0 +1,42 @@
+#skillsSection {
+    background-color: $alternateColor;
+    font-family: "Share Tech Mono", monospace;
+    color: $secondaryColor;
+    .skillsArea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        h1 {
+            font-size: 2.5vw;
+            font-weight: 600;
+            text-align: center;
+            margin: 10px auto;
+        }
+        .skilssIcon {
+            margin: 10px auto;
+            a {
+                font-size: 2.5vw;
+                color: $primaryColor;
+                &:hover {
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #skillsSection {
+        .skillsArea {
+            h1 {
+                font-size: 4vw;
+            }
+            .skilssIcon {
+                a {
+                    font-size: 4.5vw;
+                }
+            }
+        }
+    }
+}

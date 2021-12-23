@@ -222,7 +222,7 @@ nav div ul li a:hover {
   background-color: #d8e3e7;
   font-family: "Share Tech Mono", monospace;
   color: #132c33;
-  height: 60vh;
+  padding: 20px 0;
 }
 #aboutSection .aboutArea {
   display: flex;
@@ -253,9 +253,6 @@ nav div ul li a:hover {
 }
 
 @media screen and (max-width: 576px) {
-  #aboutSection {
-    height: 38vh;
-  }
   #aboutSection .aboutArea h1 {
     font-size: 4vw;
   }
@@ -272,11 +269,47 @@ nav div ul li a:hover {
     width: 70%;
   }
 }
+#skillsSection {
+  background-color: #126e82;
+  font-family: "Share Tech Mono", monospace;
+  color: #132c33;
+}
+#skillsSection .skillsArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+#skillsSection .skillsArea h1 {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px auto;
+}
+#skillsSection .skillsArea .skilssIcon {
+  margin: 10px auto;
+}
+#skillsSection .skillsArea .skilssIcon a {
+  font-size: 2.5vw;
+  color: #d8e3e7;
+}
+#skillsSection .skillsArea .skilssIcon a:hover {
+  color: #132c33;
+}
+
+@media screen and (max-width: 576px) {
+  #skillsSection .skillsArea h1 {
+    font-size: 4vw;
+  }
+  #skillsSection .skillsArea .skilssIcon a {
+    font-size: 4.5vw;
+  }
+}
 #portfolioSection {
   font-family: "Share Tech Mono", monospace;
   color: #132c33 !important;
-  background-color: #126e82;
-  height: 85vh;
+  background-color: #d8e3e7;
+  padding: 20px 0;
 }
 #portfolioSection .portfolioContents {
   display: flex;
@@ -293,7 +326,6 @@ nav div ul li a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 150vh;
   margin: 10px auto;
 }
 #portfolioSection .portfolioContents .worksArea .worksObject {
@@ -329,10 +361,9 @@ nav div ul li a:hover {
   padding: 5px;
 }
 #portfolioSection .portfolioContents .worksArea .worksObject a:hover {
-  transform: scale(1.1);
-  background-color: #d8e3e7;
-  color: #126e82;
-  border: 2px #126e82 solid;
+  background-color: #126e82;
+  color: #d8e3e7;
+  border: 2px #d8e3e7 solid;
 }
 #portfolioSection .portfolioContents a {
   color: #132c33;
@@ -342,13 +373,10 @@ nav div ul li a:hover {
   font-size: 1.5vw;
 }
 #portfolioSection .portfolioContents a p:hover {
-  color: #d8e3e7;
+  color: #126e82;
 }
 
 @media screen and (max-width: 576px) {
-  #portfolioSection {
-    height: 180vh;
-  }
   #portfolioSection .portfolioContents {
     display: flex;
     flex-direction: column;
@@ -381,13 +409,13 @@ nav div ul li a:hover {
   }
 }
 #contactSection {
-  height: 55vh;
-  background: #d8e3e7;
+  background: #126e82;
   font-family: "Share Tech Mono", monospace;
   color: #132c33;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
 #contactSection #contactForm {
   display: flex;
@@ -410,7 +438,11 @@ nav div ul li a:hover {
   border: 2px #132c33 solid;
   border-radius: 4px;
   resize: none;
-  background-color: #d8e3e7;
+  background-color: #126e82;
+}
+#contactSection #contactForm .contactInputs input::placeholder,
+#contactSection #contactForm .contactInputs textarea::placeholder {
+  color: #132c33;
 }
 #contactSection #contactForm .contactButton button {
   font-size: 20px;
@@ -420,22 +452,18 @@ nav div ul li a:hover {
   background-color: transparent;
 }
 #contactSection #contactForm .contactButton button:hover {
-  background-color: #126e82;
-  color: #d8e3e7;
-  border: 2px #126e82 solid;
+  background-color: #d8e3e7;
+  color: #126e82;
+  border: 2px #d8e3e7 solid;
 }
 
 @media screen and (max-width: 576px) {
-  #contactSection {
-    height: 45vh;
-  }
   #contactSection #contactForm h1 {
     font-size: 4vw;
   }
 }
 #footerSection {
-  height: 8vh;
-  background: #126e82;
+  background: #d8e3e7;
   font-family: "Share Tech Mono", monospace;
   color: #132c33;
   display: flex;
@@ -447,6 +475,7 @@ nav div ul li a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 20px 0;
 }
 #footerSection .footerArea p {
   margin: auto 0;
@@ -457,17 +486,15 @@ nav div ul li a:hover {
   font-size: 2vw;
 }
 #footerSection .footerArea a:hover {
-  color: #d8e3e7;
+  color: #126e82;
 }
 
 @media screen and (max-width: 576px) {
-  #footerSection {
-    height: 10vh;
-  }
   #footerSection .footerArea {
     width: 90%;
     flex-direction: column-reverse;
     justify-content: space-between;
+    padding: 10px 0;
   }
   #footerSection .footerArea p {
     font-weight: 600;

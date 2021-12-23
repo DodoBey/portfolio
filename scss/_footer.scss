@@ -1,6 +1,5 @@
 #footerSection {
-    height: 8vh;
-    background: $alternateColor;
+    background: $primaryColor;
     font-family: "Share Tech Mono", monospace;
     color: $secondaryColor;
     display: flex;
@@ -11,6 +10,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 20px 0;
         p {
             margin: auto 0;
         }
@@ -19,7 +19,7 @@
             color: $secondaryColor;
             font-size: 2vw;
             &:hover {
-                color: $primaryColor;
+                color: $alternateColor;
             }
         }
     }
@@ -27,11 +27,11 @@
 
 @media screen and (max-width: 576px) {
     #footerSection {
-        height: 10vh;
         .footerArea {
             width: 90%;
             flex-direction: column-reverse;
             justify-content: space-between;
+            padding: 10px 0;
             p {
                 font-weight: 600;
                 font-size: 3.5vw;

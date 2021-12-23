@@ -1,8 +1,8 @@
 #portfolioSection {
     font-family: "Share Tech Mono", monospace;
     color: $secondaryColor !important;
-    background-color: $alternateColor;
-    height: 85vh;
+    background-color: $primaryColor;
+    padding: 20px 0;
     .portfolioContents {
         display: flex;
         flex-direction: column;
@@ -17,7 +17,6 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            width: 150vh;
             margin: 10px auto;
             .worksObject {
                 margin: 0 0;
@@ -50,10 +49,9 @@
                     border-radius: 4px;
                     padding: 5px;
                     &:hover {
-                        transform: scale(1.1);
-                        background-color: $primaryColor;
-                        color: $alternateColor;
-                        border: 2px $alternateColor solid;
+                        background-color: $alternateColor;
+                        color: $primaryColor;
+                        border: 2px $primaryColor solid;
                     }
                 }
             }
@@ -64,7 +62,7 @@
             p {
                 font-size: 1.5vw;
                 &:hover {
-                    color: $primaryColor;
+                    color: $alternateColor;
                 }
             }
         }
@@ -73,7 +71,6 @@
 
 @media screen and (max-width: 576px) {
     #portfolioSection {
-        height: 180vh;
         .portfolioContents {
             display: flex;
             flex-direction: column;
