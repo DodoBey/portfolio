@@ -26,13 +26,11 @@
                 border-radius: 4px;
                 resize: none;
                 background-color: $alternateColor;
-                &::placeholder {
-                    color: $secondaryColor;
-                }
             }
         }
         .contactButton {
             button {
+                color: $secondaryColor;
                 font-size: 20px;
                 border: 2px $secondaryColor solid;
                 border-radius: 4px;
@@ -59,6 +57,16 @@
                 input,
                 textarea {
                     width: 300px;
+                }
+            }
+            .contactButton {
+                button {
+                    color: $secondaryColor;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: $primaryColor;
+                        color: $alternateColor;
+                    }
                 }
             }
         }
