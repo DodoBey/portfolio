@@ -579,11 +579,5 @@ nav div ul li a:hover {
     text-align: center;
   }
 }
-* {
-  -webkit-transition: all 0.5s ease-in-out !important;
-  -moz-transition: all 0.5s ease-in-out !important;
-  transition: all 0.5s ease-in-out !important;
-  scroll-behavior: smooth;
-}
 
 /*# sourceMappingURL=style.css.map */
