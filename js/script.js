@@ -10,12 +10,14 @@ window.onscroll = function () {
 
 
 // Navbar Close on Click
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarNavDropdown')
-const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
-})
+$(document).click(function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");
+    var _opened = $navbar.hasClass("show");
+    if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+        $navbar.collapse('hide');
+    }
+});
 
 // Submit Message
 $('#contactForm').submit(function (e) {

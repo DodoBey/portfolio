@@ -7,10 +7,3 @@
 @import "portfolio.scss";
 @import "contact.scss";
 @import "footer.scss";
-
-* {
-    -webkit-transition: all 0.5s ease-in-out !important;
-    -moz-transition: all 0.5s ease-in-out !important;
-    transition: all 0.5s ease-in-out !important;
-    scroll-behavior: smooth;
-}
